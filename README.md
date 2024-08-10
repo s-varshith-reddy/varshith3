@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+//this is only being use dfor doing power half for all  others i have created my own power function
 using namespace std;
 int fact(int i)
 {
