@@ -101,9 +101,9 @@ int main()
         value = pow(b, 2) - 4 * a * c;
         if (value >= 0)
         {
-            answer1 = (-b) + pow(value, 0.5);
-            answer2 = (-b) - pow(value, 0.5);
-            cout << answer1 / (2 * a) << "," << answer2 / (2 * a) << endl;
+            answer1 = ((-b) + pow(value, 0.5)/(2*a);
+            answer2 = ((-b) - pow(value, 0.5))/(2*a);
+            cout << answer1  << "," << answer2  << endl;
         }
         else if (value < 0)
         {
