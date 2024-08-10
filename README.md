@@ -101,7 +101,7 @@ int main()
         value = pow(b, 2) - 4 * a * c;
         if (value >= 0)
         {
-            answer1 = ((-b) + pow(value, 0.5)/(2*a);
+            answer1 = ((-b) + pow(value, 0.5))/(2*a);
             answer2 = ((-b) - pow(value, 0.5))/(2*a);
             cout << answer1  << "," << answer2  << endl;
         }
@@ -109,8 +109,8 @@ int main()
         {
             double valuemod = value * (-1);
             cout << "your equation has no real roots\n";
-            cout << "your roots are something like -" << b << "+i" << "(" << pow(valuemod, 0.5) << ") and";
-            cout << "-" << b << "-i" << "(" << pow(valuemod, 0.5) << ")" << endl;
+            cout << "your roots are something like -" << b /(2*a)<< "+i" << "(" << pow(valuemod, 0.5)/(2*a) << ") and";
+            cout << "-" << b/(2*a) << "-i" << "(" << pow(valuemod, 0.5)/(2*a) << ")" << endl;
         }
         break;
     }
