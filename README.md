@@ -180,11 +180,11 @@ int main()
         cout << "enter the number whose log u want ot find out\n";
         cin >> num;
         int i = 0;
-        while (num / power(2.72, i) > 1)
+        while (num / power(2.718281828459045, i) > 1)
         {
             i++;
         }
-        num = num / power(2.72, i);
+        num = num / power(2.718281828459045, i);
         num = num - 1;
 
         float answer = 0;
