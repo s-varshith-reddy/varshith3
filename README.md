@@ -51,7 +51,7 @@ int main()
     char ope;
     cout << "welcome\n";
     int option;
-    cout << "you have the following options\n1)add sub mul div modulo\n2)power\n3)quadratic expression solving\n4)trigonometric fuctions\n5)logarithm functions\n";
+    cout << "you have the following options\n1)add sub mul div modulo\n2)power\n3)quadratic expression solving\n4)trigonometric fuctions\n5)logarithm functions\n6)solving linear equations in two variables\n";
     cout<<"enter in your option number/n;
     std::cin >> option;
     switch (option)
@@ -196,5 +196,37 @@ int main()
         cout << "the answer approximately is " << answer << endl;
         break;
     }
+    case(6):
+    {
+    float a, b, c, p, q, r;
+        cout << "your equations must be in the form of ax+by=c and px+qy=r" << endl;
+
+        cout << "enter the value of a=";
+        cin >> a;
+        cout << "enter the value of b=";
+        cin >> b;
+        cout << "enter the value of c=";
+        cin >> c;
+        cout << "enter the value of p=";
+        cin >> p;
+        cout << "enter the value of q=";
+        cin >> q;
+        cout << "enter the value of r=";
+        cin >> r;
+
+        if ((a == p && b == q && c != r) || (a / p == b / q && c / r != a / p))
+        {
+            cout << "your equations have no real roots\nthey represent parallel lines on the 2d plane\n";
+        }
+        if ((a == p && b == q && c == r) || a / p == b / q && b / q == c / r)
+        {
+            cout << "they are the same lines\nthey have infinite solutions\n ";
+        }
+        if ((a != p || b != q) && (a / p != b / q))
+        {
+            float ansy, ansx;
+            ansy = (c * p - r * a) / (b * p - q * a);
+            ansx = (c - (b * ansy)) / a;
+            cout << "the answer of the equation is \nx=" << ansx << "\ny=" << ansy << endl;}
     }
 }
