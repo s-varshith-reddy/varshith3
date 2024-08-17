@@ -52,8 +52,8 @@ int main()
     cout << "welcome\n";
     int option;
     cout << "you have the following options\n1)add sub mul div modulo\n2)power\n3)quadratic expression solving\n4)trigonometric fuctions\n5)logarithm functions\n6)solving linear equations in two variables\n";
-    cout<<"enter in your option number/n;
-    std::cin >> option;
+    cout<<"enter in your option number/n";
+    cin >> option;
     switch (option)
     {
     case (1):
